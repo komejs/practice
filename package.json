@@ -6,8 +6,8 @@
     "dev": "turbo run dev",
     "build": "turbo run build",
     "changeset": "changeset",
-    "version": "changeset version --filter @komejs/practice-ui",
-    "publish": "changeset publish --filter @komejs/practice-ui"
+    "version": "changeset version",
+    "publish": "changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.7",
