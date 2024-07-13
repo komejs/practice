@@ -5,10 +5,8 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "changeset": "changeset",
-    "version": "changeset version",
-    "release:only": "changeset publish",
-    "release": "pnpm build && pnpm release:only"
+    "version": "turbo run version",
+    "publish": "turbo run publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.7",
