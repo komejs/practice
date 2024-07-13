@@ -1,0 +1,8 @@
+node_modules
+dist
+es
+lib
+cache
+.temp
+.turbo
+.DS_Store

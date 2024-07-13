@@ -1,0 +1,13 @@
+{
+  "name": "practice-docs",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@komejs/practice-ui": "workspace:*",
+    "vitepress": "^1.2.2"
+  },
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  }
+}
