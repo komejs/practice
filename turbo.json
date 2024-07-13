@@ -7,14 +7,6 @@
     "check-types": {
       "dependsOn": ["^check-types"]
     },
-    "version": {
-      "persistent": true,
-      "cache": false
-    },
-    "publish": {
-      "persistent": true,
-      "cache": false
-    },
     "dev": {
       "persistent": true,
       "cache": false

@@ -11,10 +11,7 @@
   "style": "dist/index.css",
   "scripts": {
     "build": "vue-tsc && vite build && npm run style",
-    "style": "tailwindcss -i ./src/index.css -o ./dist/index.css",
-    "changeset": "changeset",
-    "version": "changeset version",
-    "publish": "changeset publish"
+    "style": "tailwindcss -i ./src/index.css -o ./dist/index.css"
   },
   "peerDependencies": {
     "vue": "^3.4.21"
