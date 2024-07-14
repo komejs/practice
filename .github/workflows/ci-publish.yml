@@ -36,11 +36,11 @@ jobs:
       - name: Publish
         id: changesets
         uses: changesets/action@v1
-        # with:
-        #   version: pnpm run version
-        #   publish: pnpm run publish
-          # commit: "[ci] release"
-          # title: "[ci] release"
+        with:
+          version: pnpm run version
+          publish: pnpm run publish
+          commit: "[ci] release"
+          title: "[ci] release"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
