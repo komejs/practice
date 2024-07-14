@@ -39,8 +39,8 @@ jobs:
         with:
           version: pnpm run version
           publish: pnpm run publish
-          commit: "[ci] release"
-          title: "[ci] release"
+          # commit: "[ci] release"
+          # title: "[ci] release"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
