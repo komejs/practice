@@ -1,12 +1,8 @@
 name: ci-publish
 
-# on:
-#   release:
-#     types: [published]
-
 on:
-  push:
-    branches: ['main']
+  release:
+    types: [published]
 
 jobs:
   build:
@@ -41,7 +37,7 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          # version: pnpm run version
+          version: pnpm run version
           publish: pnpm run publish
           commit: "[ci] release"
           title: "[ci] release"
