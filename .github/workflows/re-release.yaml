@@ -3,20 +3,24 @@ name: re-release
 on:
   push:
     tags:
-      - "*"
+      - "@komejs/practice-ui@*.*.*"
 
 jobs:
-  release:
-    if: startsWith(github.ref, 'refs/tags/')
+  build:
+    name: Create Release
     runs-on: ubuntu-latest
     steps:
-      - name: Build Changelog
-        id: github_release
-        uses: mikepenz/release-changelog-builder-action@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create Release
-        uses: mikepenz/action-gh-release@v0.2.0-a03
         with:
-          body: ${{steps.github_release.outputs.changelog}}
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: |
+            Please refer to [CHANGELOG.md](https://github.com/f5l5y5/axios-abort/blob/main/CHANGELOG.md) for details.
+          draft: false
+          prerelease: false
