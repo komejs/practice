@@ -3,7 +3,7 @@ name: re-release
 on:
   push:
     tags:
-      - "@komejs/practice-ui@*.*.*"
+      - "*"
 
 jobs:
   build:
