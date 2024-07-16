@@ -1,15 +1,15 @@
 name: re-release
 
 on:
-  push:
-    tags:
-      - "*"
+  deployment
+  # push:
+  #   tags:
+  #     - "*"
 jobs:
   build:
     name: Create Release
     permissions:
       contents: write
-      deployments: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
