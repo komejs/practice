@@ -9,7 +9,7 @@ jobs:
     name: Create Release
     permissions:
       contents: write
-      discussions: write
+      deployments: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
