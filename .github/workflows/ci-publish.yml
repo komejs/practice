@@ -50,12 +50,8 @@ jobs:
 
       - name: "Release"
         id: release
-        uses: "marvinpinto/action-automatic-releases@latest"
+        uses: elgohr/Github-Release-Action@v5
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: true
-          title: "Development Build"
-          # files: |
-          #   LICENSE.txt
-          #   *.jar
+          title: MyReleaseMessage
