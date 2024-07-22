@@ -53,6 +53,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          title:  v${{ github.ref.tags }}
+          title: ${{ github.ref.tag_name }}
       
  

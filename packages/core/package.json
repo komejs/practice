@@ -1,6 +1,6 @@
 {
   "name": "@komejs/practice-ui",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "type": "module",
   "sideEffects": false,
   "main": "lib/index.js",
