@@ -59,8 +59,6 @@ jobs:
       - name: "Release"
         id: release
         uses: ncipollo/release-action@v1
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           artifacts: "release.tar.gz,./packages/core/*"
-          # token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
